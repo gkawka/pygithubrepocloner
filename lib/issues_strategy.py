@@ -1,5 +1,4 @@
 from github import Repository
-
 from lib.abstract_strategy import AbstractStrategy
 
 

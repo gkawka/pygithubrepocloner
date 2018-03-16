@@ -1,6 +1,4 @@
 from github import Github
-import os
-
 from lib.abstract_strategy import AbstractStrategy
 
 
