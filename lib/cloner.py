@@ -17,7 +17,8 @@ class Cloner:
         base_repository = organization.get_repo(base_repository_name)
 
         # create new repository
-        new_repository = organization.create_repo(new_repository_name)
+        new_repository = organization.create_repo(new_repository_name,
+                                                  private=True)
 
         for strategy in self.clone_strategies:
             strategy.clone(base_repository, new_repository)
